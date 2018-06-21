@@ -1,4 +1,3 @@
-monitor.pxlwrx.de
 :9090 {
     basicauth / {$ADMIN_USER} {$ADMIN_PASSWORD}
     proxy / prometheus:9090 {
