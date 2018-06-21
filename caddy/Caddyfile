@@ -6,6 +6,7 @@ monitor.pxlwrx.de:9090 {
 
     errors stderr
     tls on
+    tls admin@pxlwrx.de
 }
 
 monitor.pxlwrx.de:9093 {
@@ -16,6 +17,7 @@ monitor.pxlwrx.de:9093 {
 
     errors stderr
     tls on
+    tls admin@pxlwrx.de
 }
 
 monitor.pxlwrx.de:9091 {
@@ -26,6 +28,7 @@ monitor.pxlwrx.de:9091 {
 
     errors stderr
     tls on
+    tls admin@pxlwrx.de
 }
 
 monitor.pxlwrx.de {
@@ -36,4 +39,5 @@ monitor.pxlwrx.de {
 
     errors stderr
     tls on
+    tls admin@pxlwrx.de
 }
