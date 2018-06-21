@@ -1,4 +1,4 @@
-:9090 {
+monitor.pxlwrx.de:9090 {
     basicauth / {$ADMIN_USER} {$ADMIN_PASSWORD}
     proxy / prometheus:9090 {
             transparent
@@ -8,7 +8,7 @@
     tls on
 }
 
-:9093 {
+monitor.pxlwrx.de:9093 {
     basicauth / {$ADMIN_USER} {$ADMIN_PASSWORD}
     proxy / alertmanager:9093 {
             transparent
@@ -18,7 +18,7 @@
     tls on
 }
 
-:9091 {
+monitor.pxlwrx.de:9091 {
     basicauth / {$ADMIN_USER} {$ADMIN_PASSWORD}
     proxy / pushgateway:9091 {
             transparent
@@ -28,7 +28,7 @@
     tls on
 }
 
-:80 {
+monitor.pxlwrx.de {
     proxy / grafana:3000 {
             transparent
             websocket
