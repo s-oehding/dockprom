@@ -1,3 +1,4 @@
+monitor.pxlwrx.de
 :9090 {
     basicauth / {$ADMIN_USER} {$ADMIN_PASSWORD}
     proxy / prometheus:9090 {
@@ -5,7 +6,7 @@
         }
 
     errors stderr
-    tls off
+    tls on
 }
 
 :9093 {
@@ -15,7 +16,7 @@
         }
 
     errors stderr
-    tls off
+    tls on
 }
 
 :9091 {
@@ -25,15 +26,15 @@
         }
 
     errors stderr
-    tls off
+    tls on
 }
 
-:3000 {
+:80 {
     proxy / grafana:3000 {
             transparent
             websocket
         }
 
     errors stderr
-    tls off
+    tls on
 }
